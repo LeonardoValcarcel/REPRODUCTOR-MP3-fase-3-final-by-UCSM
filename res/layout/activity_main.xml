@@ -1,0 +1,141 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/fondo"
+    android:orientation="vertical"
+    android:stretchColumns="1" >
+
+    <Button
+        android:id="@+id/btn_displaynotif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notificaciones" />
+
+ 	<TableRow>
+ 	     <TextView
+            android:id="@+id/text"
+            android:layout_width="2dp"
+            android:layout_height="30dp"
+            android:background="#aaaaaa"
+            android:text="Cancion:" />
+
+ 	</TableRow>
+ 	<TableRow>
+        <AutoCompleteTextView
+            android:id="@+id/txtNames"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff" />
+        <TextView 
+            android:layout_height="wrap_content" 
+            android:layout_width="wrap_content" 
+            android:id="@+id/textViewPrueba"/>
+
+		<TextView 
+		    android:layout_height="wrap_content" 
+		    android:layout_width="wrap_content" 
+		    android:id="@+id/textViewPrueba2"/>
+ 	</TableRow>
+ 	<View 
+ 	    android:layout_height="2px"
+ 	    android:background="#A4C639" />
+ 	
+ 	<TableRow
+ 	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+ 	     <ListView
+            android:id="@+id/android:List"
+            android:layout_width="wrap_content"
+		    android:layout_height="200dp" /> 	     
+		
+ 	</TableRow>
+ 	
+	<TableRow>
+
+	    <SeekBar
+	        android:id="@+id/seek_bar"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@color/azul" />
+
+	</TableRow>
+	<TableRow>
+
+		<ImageButton
+		    android:id="@+id/imageButtonStop"
+		    android:layout_width="70dp"
+		    android:layout_height="70dp"
+		     android:layout_weight="15"
+		    android:onClick="onClick"
+		    android:src="@android:drawable/checkbox_off_background" />
+
+        <ImageButton
+            android:id="@+id/imageButtonAtras"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_weight="0.50"
+            android:onClick="onClick"
+            android:src="@android:drawable/ic_media_previous" />
+
+        <ImageButton
+            android:id="@+id/imageButtonPlay"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_weight="0.50"
+            android:onClick="onClick"
+            android:src="@android:drawable/ic_media_play" />
+
+        <ImageButton
+            android:id="@+id/imageButtonAdelante"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_weight="0.50"
+            android:onClick="onClick"
+            android:src="@android:drawable/ic_media_next" />
+
+        <ImageButton
+            android:id="@+id/imageButtonAdd"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_weight="0.50"
+            android:onClick="onClick"
+            android:src="@android:drawable/ic_menu_add" />
+
+    </TableRow>
+   	<LinearLayout >
+	    <Button
+		    android:id="@+id/guardar"
+		    android:layout_width="80dp"
+            android:layout_height="70dp"
+
+		    android:text="Guardar lista"
+		    android:onClick="Guardar_Click" />
+		<Button
+		    android:id="@+id/cargar"
+		    android:layout_width="80dp"
+            android:layout_height="70dp"
+
+		    android:text="Cargar lista"
+		    android:onClick="Cargar_Click" />
+		<Button
+		    android:id="@+id/borrar"
+		    android:layout_width="80dp"
+            android:layout_height="70dp"
+
+		    android:text="Borrar lista"
+		    android:onClick="Borrar_Click" />
+		<Button
+		    android:id="@+id/preference"
+		    android:layout_width="80dp"
+            android:layout_height="70dp"
+
+		    android:text="Preferencias"
+		    android:onClick="onClickLoad" />
+		<TextView 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:text="Agradecer no cuesta nada..."/>
+	</LinearLayout>  
+
+</TableLayout>
+

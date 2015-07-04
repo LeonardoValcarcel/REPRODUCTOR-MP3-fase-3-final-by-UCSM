@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.proyecto"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity            
+            android:name="com.example.proyecto.MainActivity"                    
+            android:label="@string/app_name">            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Actividad_Eleccion"
+            android:label="Eleccion">
+            <intent-filter>
+                <action android:name="com.example.Actividad_Eleccion" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            
+        </activity>
+        <activity
+            android:name="com.example.proyecto.Actividad_Eleccion_Lista"
+            android:label="Eleccion _Lista">
+            <intent-filter>
+                <action android:name="com.example.Actividad_Eleccion_Lista" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            
+        </activity>
+        <activity
+            android:name="com.example.proyecto.Actividad_Guardar_Lista"
+            android:label="Guardar_Lista">
+            <intent-filter>
+                <action android:name="com.example.Actividad_Guardar_Lista" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            
+        </activity>
+         <activity
+            android:name="com.example.proyecto.Actividad_Borrar_Lista"
+            android:label="Borrar_lista">
+            <intent-filter>
+                <action android:name="com.example.Actividad_Borrar_Lista" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            
+        </activity>
+        <activity android:name=".AppPreferenceActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action
+                    android:name="com.example.AppPreferenceActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="NotificationView"
+            android:label="Detalles de la notificacion">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+    </application>
+
+</manifest>

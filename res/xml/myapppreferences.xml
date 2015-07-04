@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory android:title="Category 1">
+      	<EditTextPreference 
+		    android:summary="Ingresa Nombre lista"
+		    android:defaultValue=""
+		    android:title="Lista"
+		    android:key="editTextPref" />
+    </PreferenceCategory>
+</PreferenceScreen>
